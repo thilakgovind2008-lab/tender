@@ -1,0 +1,7 @@
+flowchart LR
+  UI["React + TypeScript<br/>Vite interface"] --> API["Express on Vercel<br/>Application API"]
+  API --> PDF["PDF.js + adm-zip<br/>Read tender and evidence"]
+  API --> AI["Gemini<br/>Extract cited requirements"]
+  API --> DB["Supabase<br/>Auth and saved sessions"]
+  API -. Optional voice .-> VO["Sarvam"]
+  API -. Authorized automation .-> N["n8n"]

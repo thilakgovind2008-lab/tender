@@ -1,0 +1,10 @@
+flowchart TD
+  A["Supplier workspace"] --> B["API verifies Supabase session"]
+  B --> C["Read tender PDF and supplier ZIP"]
+  C --> D["Gemini extracts requirements and matches evidence"]
+  D --> E["Sentinel checks citations"]
+  E --> F["Validator assigns finding status"]
+  F --> G["Save findings and decision history"]
+  G --> H["Grounded chat"]
+  G --> I["Prioritized rescue plan"]
+  G --> J["HTML readiness report"]

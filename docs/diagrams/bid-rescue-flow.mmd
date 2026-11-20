@@ -1,0 +1,12 @@
+flowchart LR
+  A["Check my bid"] --> B["Upload tender and supplier documents"]
+  B --> C["Read findings and source pages"]
+  C --> D{"Evidence sufficient?"}
+  D -->|Yes| P["Record supported finding"]
+  D -->|Missing or expired| E["Open Rescue and fix the document"]
+  E --> F["Upload correction and recheck"]
+  F --> C
+  D -->|Ambiguous| H["Request human review"]
+  H --> R["Export report with unresolved items"]
+  P --> R
+  C --> R

@@ -1,0 +1,6 @@
+{
+  "name": "TenderKavach — Claim Your Tender",
+  "description": "TenderKavach: AI-assisted tender readiness, Bid Rescue Engine, and compliance shield for Tamil Nadu MSMEs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
